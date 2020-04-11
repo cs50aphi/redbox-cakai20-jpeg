@@ -12,32 +12,9 @@ import java.io.FileNotFoundException;
 public class RedBoxMachine
 {
    //Create an instance variable to hold all of the DVDs.
-   private String DVDList;
+   private ArrayList<String> DVDList;
    /** the list of DVDs */
-   DVD.DVD(The Hunt);
-// The Hunt
-   DVD.DVD(Just Mercy);
-// Just Mercy
-   DVD.DVD(Onward);
-// Onward
-   DVD.DVD(Sonic the Hedgehog);
-// Sonic the Hedgehog
-   DVD.DVD(Jumanji The Next Level);
-// Jumanji The Next Level
-   DVD.DVD(Frozen2);
-// Frozen 2
-   DVD.DVD(The Way Back);
-// The Way Back
-   DVD.DVD(Knives Out);
-// Knives Out
-   DVD.DVD(Bombshell);
-// Bombshell
-   DVD.DVD(Parasite);
-// Parasite
-   DVD.DVD(Ford v Ferrari);
-// Ford v Ferrari
-   DVD.DVD(A Beautiful Day in the Neighborhood);
-// A Beautiful Day in the Neighborhood
+
 
    /** Constructs a Redbox Machine and fills it with DVDs
     *  Reads the file MovieList.txt so make sure that the
@@ -61,6 +38,7 @@ public class RedBoxMachine
     */
    public int searchForMovie(String title)
    {
+       for (int i = 0; i < RedBoxMachine; i++) {
       // Complete the method to search for a movie.
       // If placement is -1, then the movie isn't there.
       // Find the index of i if the movie is there.
